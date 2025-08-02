@@ -27,30 +27,92 @@ A modern React application showcasing dynamic theme switching functionality with
 
 - Node.js (v16 or higher)
 - npm or yarn (we are using npm)
+- Git
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
 
-### Installation
+### Step-by-Step Setup Guide
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
 git clone <repository-url>
 cd multi-theme-switcher
 ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 npm install
-# or
-yarn install
 ```
 
-3. Start the development server:
+3. **Environment Setup:**
+   - Create a `.env` file in the root directory
+   - Add the following environment variables:
+   ```env
+   VITE_API_URL=https://fakestoreapi.com
+   ```
+
+4. **Configure Tailwind:**
+   - Tailwind CSS is pre-configured
+   - You can customize the theme in `tailwind.config.js`
+   - Theme variables are in `src/styles/theme.ts`
+
+5. **Start Development Server:**
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
+6. **View the Application:**
+   - Open your browser and visit `http://localhost:5173`
+   - The app should be running with hot reload enabled
+
+### Development Setup Tips
+
+1. **VS Code Extensions:**
+   - Install "Tailwind CSS IntelliSense"
+   - Install "ESLint"
+   - Install "Prettier"
+
+2. **Code Quality Tools:**
+   ```bash
+   # Run ESLint
+   npm run lint
+   
+   # Run type checking
+   npm run typecheck
+   ```
+
+3. **Build for Production:**
+   ```bash
+   # Create production build
+   npm run build
+   
+   # Preview production build
+   npm run preview
+   ```
+
+### Troubleshooting Common Issues
+
+1. **Node Version Mismatch:**
+   ```bash
+   # Check your Node version
+   node --version
+   
+   # Use nvm to switch to correct version if needed
+   nvm use 16
+   ```
+
+2. **Port Conflicts:**
+   - If port 5173 is in use, Vite will automatically try the next available port
+   - You can manually specify a port in `vite.config.ts`
+
+3. **Dependencies Issues:**
+   ```bash
+   # Clear npm cache
+   npm cache clean --force
+   
+   # Remove node_modules and reinstall
+   rm -rf node_modules
+   npm install
+   ```
 
 ## Project Structure
 
