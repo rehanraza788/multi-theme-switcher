@@ -34,7 +34,7 @@ A modern React application showcasing dynamic theme switching functionality with
 
 1. **Clone the repository:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/rehanraza788/multi-theme-switcher
 cd multi-theme-switcher
 ```
 
